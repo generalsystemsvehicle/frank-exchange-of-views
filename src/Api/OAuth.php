@@ -11,6 +11,8 @@ class OAuth extends Api
 {
     /**
      * Get an access token and refresh token with an authorization code.
+     * https://marketplace.zoom.us/docs/guides/auth/oauth
+     *
      * @param  array  $payload
      * @return array|null
      */
@@ -45,6 +47,8 @@ class OAuth extends Api
 
     /**
      * Get an access token and refresh token with a refresh token.
+     * https://marketplace.zoom.us/docs/guides/auth/oauth#refreshing
+     *
      * @param  array  $payload
      * @return array|null
      */

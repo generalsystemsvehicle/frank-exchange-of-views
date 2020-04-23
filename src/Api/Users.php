@@ -11,6 +11,8 @@ class Users extends Api
 {
     /**
      * Get a user.
+     * https://marketplace.zoom.us/docs/api-reference/zoom-api/users/user
+     *
      * @param  string $userId
      * @param  array  $payload
      * @return array|null

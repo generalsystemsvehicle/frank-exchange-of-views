@@ -11,6 +11,7 @@ class Meetings extends Api
 {
     /**
      * Get the meetings index.
+     * https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetings
      *
      * @param  string $userId
      * @param  array  $payload
@@ -35,6 +36,8 @@ class Meetings extends Api
 
     /**
      * Get a meeting.
+     * https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meeting
+     *
      * @param  string $meetingId
      * @param  array  $payload
      * @return array|null
@@ -58,6 +61,8 @@ class Meetings extends Api
 
     /**
      * Create a meeting.
+     * https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingcreate
+     *
      * @param  string $userId
      * @param  array  $payload
      * @return array|null
@@ -85,6 +90,8 @@ class Meetings extends Api
 
     /**
      * Update a meeting
+     * https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingupdate
+     *
      * @param  string $meetingId
      * @param  array  $payload
      * @return array|null
@@ -113,6 +120,8 @@ class Meetings extends Api
 
     /**
      * Delete a meeting.
+     * https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingdelete
+     *
      * @param  string $meetingId
      * @param  array  $payload
      * @return array|null
