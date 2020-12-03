@@ -2,9 +2,7 @@
 
 namespace GeneralSystemsVehicle\Zoom\Api;
 
-use GuzzleHttp\Client;
 use Illuminate\Support\Arr;
-use GuzzleHttp\Exception\RequestException;
 use GeneralSystemsVehicle\Zoom\Guzzle\Api;
 
 class Users extends Api
