@@ -78,7 +78,7 @@ class Meetings extends Api
         return $this->try(function() use ($userId, $payload)
         {
             return $this->client->post('v2/users/'.$userId.'/meetings', [
-                'body' => Arr::get($payload, 'body'),
+                'body' => json_encode(Arr::get($payload, 'body')),
                 'headers' => [
                     'Authorization' => Arr::get($payload, 'authorization'),
                 ],
@@ -107,7 +107,7 @@ class Meetings extends Api
         return $this->try(function() use ($meetingId, $payload)
         {
             return $this->client->patch('v2/meetings/'.$meetingId, [
-                'body' => Arr::get($payload, 'body'),
+                'body' => json_encode(Arr::get($payload, 'body')),
                 'query' => Arr::get($payload, 'query', []),
                 'headers' => [
                     'Authorization' => Arr::get($payload, 'authorization'),
