@@ -11,7 +11,7 @@ trait ServiceBindings
      */
     protected $serviceBindings = [
         Api\Meetings::class,
-        Api\OAuth::class,
+        Api\Oauth::class,
         Api\Users::class,
     ];
 }
