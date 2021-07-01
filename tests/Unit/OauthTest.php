@@ -13,7 +13,7 @@ class OauthTest extends TestCase
     function it_gets_an_access_token_with_an_authorization_code()
     {
         $mock = new MockHandler([
-            new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__ . '/../Fixtures/OAuth/authorization.json')),
+            new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__ . '/../Fixtures/Oauth/authorization.json')),
         ]);
 
         $oauth = new Oauth(['mock' => $mock]);
@@ -53,7 +53,7 @@ class OauthTest extends TestCase
     function it_gets_an_access_token_with_a_refresh_token()
     {
         $mock = new MockHandler([
-            new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__ . '/../Fixtures/OAuth/refresh.json')),
+            new Response(200, ['Content-Type' => 'application/json'], file_get_contents(__DIR__ . '/../Fixtures/Oauth/refresh.json')),
         ]);
 
         $oauth = new Oauth(['mock' => $mock]);
