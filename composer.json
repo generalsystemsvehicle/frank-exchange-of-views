@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "GeneralSystemsVehicle\\Zoom\\": "src/"
+            "GeneralSystemsVehicle\\Zoom\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "GeneralSystemsVehicle\\Zoom\\Tests\\": "tests/"
+            "GeneralSystemsVehicle\\Zoom\\Tests\\": "tests"
         }
     },
     "scripts": {
